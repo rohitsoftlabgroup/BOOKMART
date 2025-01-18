@@ -1,0 +1,109 @@
+/* Custom Styling for Category Page (Fiction Books) */
+.container {
+    margin-top: 60px;
+}
+
+/* Category Title */
+.category-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #007bff;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Book Card Styling */
+.book-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.book-card:hover {
+    transform: translateY(-10px);
+}
+
+.card-img-top {
+    max-height: 250px;
+    object-fit: cover;
+}
+
+/* Price Styling */
+.book-price {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #007bff;
+}
+
+/* Button Styling */
+.btn {
+    border-radius: 25px;
+}
+
+.btn-info {
+    background-color: #17a2b8;
+}
+
+.btn-info:hover {
+    background-color: #138496;
+}
+
+.btn-success {
+    background-color: #28a745;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+}
+
+.btn-primary {
+    background-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0069d9;
+}
+
+/* Grid Layout for Books */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.col-md-3 {
+    flex: 1 0 21%; /* Makes the cards responsive (4 per row) */
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #555;
+}
+
+.mt-2 {
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .col-md-3 {
+        flex: 1 0 48%; /* 2 per row on medium screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .col-md-3 {
+        flex: 1 0 100%; /* 1 per row on small screens */
+    }
+}

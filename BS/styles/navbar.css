@@ -1,0 +1,150 @@
+/* Global Reset for all pages */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Wrapper for Navbar and Header */
+.navbar-wrapper {
+    width: 100%;
+}
+
+/* Header Section */
+.navbar-wrapper .header {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.navbar-wrapper .header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+/* Navbar Styles */
+.navbar-wrapper .navbar {
+    background-color: #343a40;
+    padding: 0.5rem 1rem;
+    position: relative;
+}
+
+.navbar-wrapper .navbar-brand {
+    font-size: 1.75rem;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.navbar-wrapper .navbar-toggler {
+    border: none;
+}
+
+.navbar-wrapper .navbar-toggler-icon {
+    background-color: white;
+}
+
+.navbar-wrapper .navbar-nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+}
+
+.navbar-wrapper .nav-item {
+    margin-left: 20px;
+}
+
+.navbar-wrapper .nav-link {
+    color: white;
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.navbar-wrapper .nav-link:hover {
+    background-color: #ff6f61;
+    border-radius: 5px;
+}
+
+/* Search Bar Styles */
+.navbar-wrapper .search-bar {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.navbar-wrapper .search-bar input {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+}
+
+.navbar-wrapper .search-bar button {
+    border: none;
+    background-color: transparent;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.navbar-wrapper .search-bar button i {
+    color: white;
+}
+
+/* Mobile View - Navbar Toggle */
+@media (max-width: 768px) {
+    .navbar-wrapper .navbar-nav {
+        flex-direction: column;
+        background-color: #343a40;
+        width: 100%;
+        position: absolute;
+        top: 56px;
+        left: 0;
+        display: none;
+    }
+
+    .navbar-wrapper .navbar-nav.show {
+        display: block;
+    }
+
+    .navbar-wrapper .nav-item {
+        margin: 10px 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar-wrapper .navbar-toggler {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+
+    .navbar-wrapper .search-bar {
+        margin-top: 10px;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .navbar-wrapper .search-bar input {
+        width: 100%;
+    }
+
+    .navbar-wrapper .search-bar button {
+        width: auto;
+    }
+}
