@@ -40,6 +40,7 @@ html, body {
     position: relative;
 }
 
+/* Navbar Branding */
 .navbar-wrapper .navbar-brand {
     font-size: 1.75rem;
     font-weight: bold;
@@ -49,6 +50,7 @@ html, body {
     text-decoration: none;
 }
 
+/* Navbar Toggle Button */
 .navbar-wrapper .navbar-toggler {
     border: none;
 }
@@ -57,9 +59,10 @@ html, body {
     background-color: white;
 }
 
+/* Navbar Nav Items */
 .navbar-wrapper .navbar-nav {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;  /* Centers the navigation items */
     align-items: center;
     width: 100%;
 }
@@ -80,6 +83,11 @@ html, body {
 .navbar-wrapper .nav-link:hover {
     background-color: #ff6f61;
     border-radius: 5px;
+}
+
+/* Right-aligned Profile Section */
+.navbar-wrapper .navbar-nav.ms-auto {
+    margin-left: auto !important;  /* Pushes profile section to the far right */
 }
 
 /* Search Bar Styles */

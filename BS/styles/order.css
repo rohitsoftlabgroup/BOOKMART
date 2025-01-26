@@ -1,0 +1,35 @@
+/* Custom styles for the order page */
+.container {
+    max-width: 900px;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.table th, .table td {
+    vertical-align: middle;
+}
+
+.table-responsive {
+    margin-top: 30px;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+    border-color: #c82333;
+}
+
+.d-flex {
+    margin-top: 20px;
+}
+
+.d-flex .btn {
+    margin-right: 10px;
+}
